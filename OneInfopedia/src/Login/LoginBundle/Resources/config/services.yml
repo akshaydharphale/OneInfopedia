@@ -1,0 +1,4 @@
+services:
+    login_login.article_manager:
+        class: Login\LoginBundle\Modals\ArticleManager
+        arguments: ["@doctrine"]

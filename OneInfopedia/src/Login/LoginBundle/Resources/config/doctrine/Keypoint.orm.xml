@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Login\LoginBundle\Entity\Keypoint" table="keypoint">
+    <id name="keypointid" type="integer" column="keypointid">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="body" type="string" column="body" length="1000" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+
+
+
+    <field name="title" type="string" column="title" length="255" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="authoremail" type="string" column="authoremail" length="255" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+
+
+
+    <field name="emailcontributor" type="string" column="emailcontributor" length="255" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="articleid" type="integer" column="articleid" nullable="true">
+      <options>
+        <option name="unsigned"/>
+      </options>
+    </field>
+  </entity>
+</doctrine-mapping>

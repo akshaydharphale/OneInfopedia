@@ -1,0 +1,84 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+	<div class="container">	
+		{# <h2>Hello {{ name }} </h2> #}
+	</div>
+	{% block container %}
+			<div class="container">
+				<form id="form" class="well" method="POST" action="{{path('login_login_addarticle')}}">
+					<h2>New Article</h2>
+					<label>Title</label>
+					<div>
+					<input type="text" name="title"  class="input-xlarge">
+					</div>
+
+
+					<div class="form-group">
+					<label>Contents</label>
+					<input type="text" name="body" class="form-control">
+					</div>
+					
+
+
+
+					<label>Category</label>
+					<div>
+					<input type="text" name="tag" class="input-xlarge">
+					</div>
+					<div>
+					<input type="hidden" id="date" name="date">
+					<div><button class="btn btn-primary" type="submit" >Post Article</button></div>
+				</form> 
+			</div>
+	{% endblock %}
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{# <!DOCTYPE html>
+<html lang="en">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+{% block container %}
+	<div class="container">
+		<form id="form" class="well" method="POST" action="{{path('login_login_addarticle')}}">
+			<h2>New Article</h2>
+			<label>Title</label>
+			<input type="text" name="title"  class="input-xlarge">
+			<label>Contents</label>
+			<input type="textarea" name="body" class="input-xlarge">
+			<label>Category</label>
+			<input type="text" name="tag" class="input-xlarge">
+			<input type="hidden" id="date" name="date">
+			<div>
+				<button class="btn btn-primary" type="submit" >Post Article</button>
+			</div>
+		</form> 
+	</div>
+
+{% endblock %}
+
+<script type="text/javascript">
+  document.getElementById('date').value = Date();
+</script>
+
+</body>
+</html>
+
+ #}

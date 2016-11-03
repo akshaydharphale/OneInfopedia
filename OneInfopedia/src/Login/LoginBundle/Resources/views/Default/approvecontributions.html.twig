@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+	<h2 class="page-header">My Article Contributions</h2>
+	<table class="table table-striped">
+		<thead> 
+		<tr> 
+			<th>Title</th> 
+			<th>Contributor</th>
+			<th>Information pending for Approval</th> 
+		</tr> 
+		</thead>
+
+		<tbody>
+			{% for keypoint in keypoints %}
+				<tr> 
+					<td>{{keypoint.title}}</td> 
+					<td>{{keypoint.emailcontributor }}</td>
+					<td>{{keypoint.body }}</td>
+					<td>
+						<a href = "/approvekeypoint/{{keypoint.keypointid}}" class="btn btn-success">Approve</a>
+						<a href = "/rejectkeypoint/{{keypoint.keypointid}}" class="btn btn-danger">Delete</a>
+					</td>
+				</tr> 
+			{% endfor %}
+		</tbody>
+	</table>  
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+ 	<a class = "btn btn-default" href = "/allarticle">Lastest Articles</a>
+ 	<a class = "btn btn-default" href = "/myarticle">My Articles</a>  
+ 	<hr>
+ 	<h2 class="page-header">{{article.title}}</h2>
+ 	<ul class="list-group">
+ 	<li class = "list-group-item">Category:  {{article.tag}}</li>
+ 	<li class = "list-group-item">Author: {{article.email}}</li>
+ 	<li class = "list-group-item">Published Date:  <strong> {{article.publisheddate|date('F j,Y, g:i a')}}
+ 	<strong>
+ 	</li>
+ 	</ul>
+	 	{% block container %}
+			<div class="container">
+		 	<form id="form" class="well" method="POST" action="{{path('login_login_contributesubmission')}}">
+				<h2>Contribute to this Article</h2>
+				<label>Add Information Here</label>
+
+				<div class="form-group">
+					<input type="text" name="body" class="form-control">
+				</div>
+
+				<div>
+					<input type="hidden" name="articleid" value={{article.articleid}} >
+					<input type="hidden" name="authoremail" value={{article.email}} >
+					<input type="hidden" name="articletitle" value={{article.title}} >
+				</div>
+				<div><button class="btn btn-primary" type="submit" >Submit for Approval</button></div>
+			</form>
+		</div>
+		{% endblock %}
+ 	<p>
+ 		{{ article.body}}
+ 	</p>
+{% endblock %} 

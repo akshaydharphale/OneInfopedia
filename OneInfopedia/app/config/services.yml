@@ -1,0 +1,17 @@
+# Learn more about services, parameters and containers at
+# http://symfony.com/doc/current/book/service_container.html
+parameters:
+#    parameter_name: value
+services:
+    login_login.article_manager:
+        class: Login\LoginBundle\Modals\ArticleManager
+        arguments: ["@doctrine"]
+
+    login_login.contribution_manager:
+        class: Login\LoginBundle\Modals\ContributionManager
+        arguments: ["@doctrine"]
+
+    login_login.login_manager:
+        class: Login\LoginBundle\Modals\LoginManager
+        arguments: ["@doctrine"]
+

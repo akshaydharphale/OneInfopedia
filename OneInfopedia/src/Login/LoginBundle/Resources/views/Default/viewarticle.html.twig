@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+ 	<a class = "btn btn-default" href = "/allarticle">Lastest Articles</a>
+ 	<a class = "btn btn-default" href = "/myarticle">My Articles</a>  
+ 	<hr>
+ 	<h2 class="page-header">{{article.title}}</h2>
+ 	<ul class="list-group">
+ 	{# <li class = "list-group"> #}
+ 	<li class = "list-group-item">Category:  {{article.tag}}</li>
+ 	<li class = "list-group-item">Author: {{article.email}}</li>
+ 	<li class = "list-group-item">Published Date:  <strong> {{article.publisheddate|date('F j,Y, g:i a')}}
+ 	<strong>
+ 	</li>
+ 	</ul>
+ 	<p>
+ 		{{ article.body}}
+ 	</p>
+
+
+{% endblock %} 

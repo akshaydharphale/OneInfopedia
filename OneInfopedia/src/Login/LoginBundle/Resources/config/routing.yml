@@ -1,0 +1,67 @@
+login_login_homepage:
+    path:     /
+    defaults: { _controller: LoginLoginBundle:Login:index }
+
+login_login_addarticle:
+    path:     /addarticle
+    defaults: { _controller: LoginLoginBundle:Article:addarticle }
+
+login_login_logout:
+    path:     /logout
+    defaults: { _controller: LoginLoginBundle:Login:logout }
+
+login_login_welcome:
+    path:     /welcome
+    defaults: { _controller: LoginLoginBundle:Login:welcome }
+
+login_login_signup:
+    path:     /signup
+    defaults: { _controller: LoginLoginBundle:Login:signup }
+
+login_login_allarticle:
+    path:     /allarticle
+    defaults: { _controller: LoginLoginBundle:Article:allarticle }
+
+login_login_viewarticle:
+    path:     /viewarticle/{id}
+    defaults: { _controller: LoginLoginBundle:Article:viewarticle }
+
+login_login_editarticle:
+    path:     /editarticle/{id}
+    defaults: { _controller: LoginLoginBundle:Article:editarticle }
+
+login_login_contributearticle:
+    path:     /contributearticle/{id}
+    defaults: { _controller: LoginLoginBundle:Article:contributearticle }
+
+login_login_contributesubmission:
+    path:     /contributesubmission
+    defaults: { _controller: LoginLoginBundle:Article:contributesubmission }
+
+login_login_deletearticle:
+    path:     /deletearticle/{id}
+    defaults: { _controller: LoginLoginBundle:Article:deletearticle }
+
+login_login_myarticle:
+    path:     /myarticle
+    defaults: { _controller: LoginLoginBundle:Article:myarticle }
+
+login_login_approvecontributions: 
+    path:     /approvecontributions
+    defaults: { _controller: LoginLoginBundle:Contribution:approvecontributions }
+
+login_login_approvekeypoint:
+    path:     /approvekeypoint/{id}
+    defaults: { _controller: LoginLoginBundle:Contribution:approvekeypoint }
+
+login_login_rejectkeypoint:
+    path:     /rejectkeypoint/{id}
+    defaults: { _controller: LoginLoginBundle:Contribution:rejectkeypoint }
+
+
+
+
+
+
+
+
