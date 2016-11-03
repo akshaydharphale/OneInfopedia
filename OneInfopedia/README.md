@@ -3,6 +3,22 @@ Infopedia
 
 Information Networking and Collaboration Tool
 
+URL: 
+http://35.160.138.22:8000
+
+Tools use
+
+1) PHP, Javascript, HTML - Language
+
+2) Symfony - back-end service
+
+3) AngularJS
+
+4) MySQL - database
+
+5) Amazon Ec2 for Hosting
+
+
 Infopedia provides platform for users to collaborate and develop content by publishing articles and contributing to others article.
 
 
