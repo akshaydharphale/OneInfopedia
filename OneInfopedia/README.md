@@ -3,8 +3,6 @@ Infopedia
 
 Information Networking and Collaboration Tool
 
-URL: 
-http://35.160.138.22:8000
 
 Tools use
 
